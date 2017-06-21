@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rayan.avik.chattingapp.MainActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="13dp"
+        android:src="@drawable/ic_send"
+        app:fabSize="auto"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/text_layout"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/input_text"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:id="@+id/chat_list"
+        android:layout_above="@+id/fab"
+        android:divider="#00ffffff"
+        android:dividerHeight="13dp"/>
+
+</RelativeLayout>
